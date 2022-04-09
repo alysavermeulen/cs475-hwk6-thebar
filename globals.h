@@ -11,6 +11,12 @@
 int num_threads;	// number of customer threads
 int now_serving;	// customer's ID who is being served
 
-//TODO - declare some semaphores
+// semaphores
+sem_t *bar_empty;
+sem_t *customer_entered;
+sem_t *order_placed;
+sem_t *drink_made;
+sem_t *customer_paid;
+sem_t *payment_received;
 
 #endif /* GLOBALS_H_ */
